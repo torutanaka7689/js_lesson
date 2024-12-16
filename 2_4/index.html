@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>値の取得</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  <script>
+  $(function(){
+    let button_tag = $("#button")
+    button_tag.on("click",function(){
+      let text = $("#value").val();
+      alert(text);
+    });
+  });
+  </script>
+</head>
+<body>
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン">
+</body>
+</html>
